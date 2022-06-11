@@ -15,7 +15,7 @@ public class LogsAdvice{
     Logger logger = LoggerFactory.getLogger(LogsAdvice.class);
 
     /**
-     * to specify where the packages where this log should work
+     * to specify  the packages where this log should work
      */
     @Pointcut(value = "execution(* com.example.aop.*.*.*(..))")
     public void myPointCut(){
