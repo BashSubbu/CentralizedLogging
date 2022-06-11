@@ -15,6 +15,11 @@ public class HomeController {
     @Autowired
     private BookService bookService;
 
+    /**
+     * to save new book
+     * @param books
+     * @return
+     */
     @PostMapping("/v1/books")
     public ResponseEntity<Object> saveBook(@RequestBody Books books){
         Books booksOutput = null;
@@ -27,6 +32,10 @@ public class HomeController {
         }
     }
 
+    /**
+     * to get all books
+     * @return
+     */
     @GetMapping("/v1/books")
     public ResponseEntity<Object> getBooks(){
         List<Books> booksList = null;
