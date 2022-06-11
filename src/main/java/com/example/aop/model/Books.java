@@ -10,7 +10,7 @@ import java.util.Date;
 @Table(name = "books")
 public class Books {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
     private String author;
